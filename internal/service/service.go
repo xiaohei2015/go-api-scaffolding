@@ -2,13 +2,8 @@ package service
 
 import (
 	"context"
-	"fmt"
-
-	pb "go-api-scaffolding/api"
-	"go-api-scaffolding/internal/dao"
 	"github.com/bilibili/kratos/pkg/conf/paladin"
-
-	"github.com/golang/protobuf/ptypes/empty"
+	"go-api-scaffolding/internal/dao"
 )
 
 // Service service.
@@ -31,11 +26,11 @@ func New() (s *Service) {
 }
 
 // SayHello grpc demo func.
-func (s *Service) SayHello(ctx context.Context, req *pb.HelloReq) (reply *empty.Empty, err error) {
+/*func (s *Service) SayHello(ctx context.Context, req *pb.HelloReq) (reply *empty.Empty, err error) {
 	reply = new(empty.Empty)
 	fmt.Printf("hello %s", req.Name)
 	return
-}
+}*/
 
 // Ping ping the resource.
 func (s *Service) Ping(ctx context.Context) (err error) {

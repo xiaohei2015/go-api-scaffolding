@@ -10,6 +10,12 @@
 2. Go: go1.12.4
 3. 运行的相关依赖包200多MB，如果需要，请联系作者
 
+## 执行步骤
+1. cd go-api-scaffolding/cmd
+2. go build
+3. cmd --conf ../configs
+4. 打开浏览器，输入地址http://localhost:8000/go-api-scaffolding/start，会输出"Golang 大法好！！！"，说明成功！
+
 ## 性能比较
 1. vs PHP7
 
