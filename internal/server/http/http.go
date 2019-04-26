@@ -42,6 +42,10 @@ func initRouter(e *bm.Engine) {
 	{
 		g.GET("/start", howToStart)
 	}
+	ac := e.Group("/article")
+	{
+		ac.POST("/add", ArticleAdd)
+	}
 }
 
 func ping(ctx *bm.Context) {
